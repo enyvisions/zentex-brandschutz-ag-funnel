@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ZENTEX BRANDSCHUTZ AG | Landingpage</title>
+  <style>
+    :root {
+      --primary: #000000;
+      --accent: #ffffff;
+      --bg: #2b2b2b;
+      --text: #f4f4f4;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "inherit", sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    h1,h2,h3 {
+      font-family: "inherit", sans-serif;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+    }
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+    nav {
+      position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px);
+      background: rgba(255,255,255,.75); border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .logo { height: 42px; width: auto; object-fit: contain; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: var(--radius);
+      text-decoration: none; background: var(--primary); color: #fff; font-weight: 700;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: .92; }
+    section { padding: 72px 0; }
+    .hero { display: grid; gap: 28px; grid-template-columns: 1.2fr .8fr; align-items: center; }
+    .hero-img {
+      width: 100%; border-radius: 24px; object-fit: cover; max-height: 520px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.12);
+    }
+    .bar {
+      display: flex; gap: 12px; flex-wrap: wrap; padding: 18px; border-radius: var(--radius);
+      background: rgba(255,255,255,.8); border: 1px solid rgba(0,0,0,.08);
+    }
+    .bar a {
+      text-decoration: none; color: var(--text); font-size: 14px; padding: 8px 12px;
+      border: 1px solid rgba(0,0,0,.1); border-radius: 999px;
+    }
+    .grid3 { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+    .card {
+      padding: 24px; border-radius: 18px; background: #fff; border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    }
+    .accent { color: var(--accent); font-weight: 700; }
+    .cta {
+      border-radius: 24px; background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff; padding: 42px;
+    }
+    .form {
+      display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-top: 16px;
+    }
+    input {
+      width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid rgba(0,0,0,.2);
+      font-size: 16px;
+    }
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid3 { grid-template-columns: 1fr; }
+      .form { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div><img src="https://zentex.ch/wp-content/uploads/2023/01/zentex_rgb-1-e1674805136193.jpg" alt="ZENTEX BRANDSCHUTZ AG Logo" class="logo"/></div>
+      <a class="btn" href="#cta">Termin anfragen</a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container hero">
+      <div>
+        <h1>Klare Positionierung, überzeugende Kommunikation und ein Funnel, der passende Kund:innen anzieht.</h1>
+        <p class="reveal">Die ZENTEX BRANDSCHUTZ AG ist ein von Behörden, Industrie und Gewerbe anerkanntes Unternehmen im Bereich der stationären Löschanlagen.</p>
+        <a class="btn" href="#angebot">Jetzt Erstgespräch sichern</a>
+      </div>
+      <div class="reveal"><img src="https://zentex.ch/wp-content/uploads/2023/01/zentex_icons_web_1-1.png" alt="ZENTEX BRANDSCHUTZ AG" class="hero-img"/></div>
+    </div>
+  </section>
+
+  
+
+  <section>
+    <div class="container">
+      <h2>Wenn sich Marketing anstrengend statt planbar anfühlt</h2>
+      <p class="reveal">Die ZENTEX BRANDSCHUTZ AG ist ein von Behörden, Industrie und Gewerbe anerkanntes Unternehmen im Bereich der stationären Löschanlagen.</p>
+      <p class="reveal">Die häufige Folge: viele Anfragen, aber wenig passende Kund:innen, hoher Abstimmungsaufwand und unsichere Abschlussquoten.</p>
+    </div>
+  </section>
+
+  <section id="angebot">
+    <div class="container">
+      <h2>Die Lösung: Planung</h2>
+      <p>ZENTEX BRANDSCHUTZ AG arbeitet mit einem klaren Ansatz rund um Planung, Beratung.</p>
+      <div class="grid3">
+        <article class="card reveal"><h3>Analyse</h3><p>Klare Standortbestimmung: Angebot, Zielgruppe, Conversion-Hürden.</p></article>
+        <article class="card reveal"><h3>Positionierung</h3><p>Deutliche Differenzierung mit präziser Botschaft in der Sprache der Zielgruppe.</p></article>
+        <article class="card reveal"><h3>Umsetzung</h3><p>Landingpage, Funnel und klare Conversion-Pfade für qualifizierte Anfragen.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Kundenergebnisse</h2>
+      <div class="grid3">
+        <article class="card reveal">
+          <p>“Unser moderner und Leistungsfähiger Kundendienst steht allen Neukunden sowie Bestandskunden gerne zur Seite.”</p>
+          <strong>Kund:in</strong>
+        </article>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container card">
+      <h2>Gratis Ressource</h2>
+      <p>Kostenloser Leitfaden: Die 7 häufigsten Fehler vor dem nächsten Kundenprojekt</p>
+      <form class="form">
+        <input type="email" placeholder="Ihre E-Mail-Adresse"/>
+        <button type="button" class="btn">Jetzt erhalten</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="container card">
+      <h2>Investition</h2>
+      <p><span class="accent">Planung</span></p>
+      <p>Preis auf Anfrage / nach Erstgespräch</p>
+      <p>Wenn keine fixe Preisliste sichtbar ist: individuelle Offerte nach Erstgespräch.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Über ZENTEX BRANDSCHUTZ AG</h2>
+      <p>Website: https://zentex.ch/</p>
+      <p>Fokus auf belastbare Prozesse, hochwertige Umsetzung und klare Ergebnisse für die passende Zielgruppe.</p>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="container cta">
+      <h2>Bereit für mehr qualifizierte Anfragen?</h2>
+      <p>Starten Sie mit einem unverbindlichen Gespräch und erhalten Sie einen klaren Umsetzungsplan.</p>
+      <a class="btn" href="https://zentex.ch/" target="_blank" rel="noopener">Jetzt Gespräch buchen</a>
+    </div>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
